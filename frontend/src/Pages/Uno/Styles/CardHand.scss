@@ -1,0 +1,84 @@
+html,
+body {
+  height: 100% ;
+}
+
+body {
+  background: radial-gradient(#333, #111);
+  overflow: hidden;
+}
+
+
+.cards {
+    display: flex;
+    height: 350px;
+    align-items: center;
+    justify-content: center;
+}
+$border-radius: 12px;
+$card-width: 120px;
+$card-reveal: ($card-width * .68);
+$card-overlap: $card-reveal * -1;
+.uno-hand {
+    width: $card-width;
+    height: 180px;
+    background: linear-gradient(-12deg, #111111 0%, #262626 75%);
+    border-radius: $border-radius;
+    box-shadow: -1rem 0 3rem #000;
+    transition: 300ms ease-out;
+    border: 1px solid;
+    border-top-color: #262626;
+    border-left-color: #262626;
+    border-bottom-color: #0d0d0d;
+    border-right-color: #0d0d0d;
+  }
+  .uno-hand:not(:first-child) {
+    margin-left: $card-overlap;
+  }
+  .uno-hand:hover {
+    transform: translateY(-20px);
+    z-index: 10;
+  }
+  .uno-hand:hover ~ .cards {
+    transform: translateX($card-reveal);
+  }
+
+  .top{
+    top:-15vh;
+    width:100vw;
+    transform: rotate(180deg);
+    position: absolute;
+  }
+  .bottom{
+      top:80vh;
+      position:absolute;
+      width:100vw;
+  }
+  .uno-player{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0vh;
+  }
+  .uno-player-img{
+    width: 5vw !important;
+    height: 5vw !important;
+    min-width:50px;
+    min-height: 50px;
+  }
+  .uno-player-top{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top:0vh; 
+  }
+  .uno-player-bottom{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top:0vh !important;
+  }
+ .right {
+     transform: rotate(270deg);
+    
+ }

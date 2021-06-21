@@ -1,0 +1,101 @@
+
+.subtitle{
+    color:grey;
+    font-size: small;
+    text-align: center;
+    padding-left:10px;
+    padding-right:10px;
+    display:block;
+  }
+.us-h1{
+    text-align: center;
+    margin: 0 auto;
+    padding:0 !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-overflow: ellipsis;
+    color:white;
+}
+@media only screen and (max-width: 600px) {
+    .us-h1 {
+        font-size:22px !important;
+    }
+}
+.code-input {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    outline: 0;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.2);
+    max-width: 350px;
+    width: 25%;
+    min-width: 150px;
+    border-radius: 3px;
+    padding: 10px 15px;
+    margin: 0 auto 10px auto;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    transition-duration: 0.25s;
+    font-weight: 600;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif !important;
+  }
+  .code-input:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  .code-input:focus {
+    background-color: white;
+    max-width: 350px;
+    min-width: 150px;
+    width:25%;
+    color: #B24041;
+  }
+  button {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    outline: 0;
+    background-color: #FFE299;
+    border: 0;
+    display: block;
+    padding: 10px 15px;
+    color: #B24041;
+    border-radius: 3px;
+    max-width: 250px;
+    width: 25%;
+    min-width: 150px;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 0 auto !important;
+    transition-duration: 0.25s;
+    font-weight: 600;
+    font-size: large;
+    padding:5px;
+    margin-top:5px !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+  }
+  .odd {
+    background-color: #FCFFAD;
+  }
+  button:hover {
+    background-color: #f5f7f9;
+  }
+  button:disabled {
+    background-color: #f5f7f9;
+  }
+  svg path,
+svg rect{
+  fill: #f66;
+}
+.loader{
+  margin:0 auto;
+  display:block;
+}
+.loader svg{
+  margin: 0 auto;
+  display:block;
+  fill: #f66;
+}

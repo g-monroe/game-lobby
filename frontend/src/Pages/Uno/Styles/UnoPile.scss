@@ -1,0 +1,48 @@
+.unoCard1{
+    position: absolute;
+    transform: rotate(10deg);
+}
+.unoCard2{
+    position: absolute;
+    transform: rotate(5deg);
+}
+.unoCard3{
+    position: absolute;
+    transform: rotate(-5deg);
+}
+.deck-unoCard1{
+    position: absolute;
+    transform: rotate(-5deg);
+}
+.deck-unoCard2{
+    position: absolute;
+    transform: rotate(2deg);
+}
+.deck-unoCard3{
+    position: absolute;
+    transform: rotate(3deg);
+}
+.uno-pile-top{
+    animation: topdraw 2s infinite;
+    position: absolute !important;
+}
+@keyframes topdraw {
+    0%{
+        top:0vh;
+    }
+    100%{
+        top:-48vh;
+    }
+}
+.uno-pile-bottom{
+    animation: bottomdraw 2s infinite;
+    position: absolute !important;
+}
+@keyframes bottomdraw {
+    0%{
+        top:0vh;
+    }
+    100%{
+        top:48vh;
+    }
+}

@@ -1,0 +1,84 @@
+.flex-grid {
+    border-radius: 8px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.flex-grid-item {
+    border-radius: 8px;
+    margin: 16px;
+	height: 120px;
+	flex-grow: 1;
+	flex-shrink: 0;
+	flex-basis: 33.3333%;
+	flex-basis: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+    background-image: radial-gradient(white 8%, transparent 7%), radial-gradient(#FFF7A4 8%, transparent 10%);
+    background-size:40px 40px;
+    background-position: 0 0, 60px 60px;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+}
+@media only screen and (max-width: 410px) {
+    .as-h1 {
+      font-size:22px !important;
+    }
+    .flex-grid-item{
+        max-width:90% !important;
+        width: 10% !important;
+        margin: 0 auto;
+        padding:2%;
+        margin-bottom: 10px;
+    }
+  }
+.blank {
+	height: 0;
+}
+
+/* colors by clrs.cc*/
+.flex-grid-item:nth-child(1)  {background-color: #001f3f; animation-name: backgroundmovement;}
+.flex-grid-item:nth-child(2)  {background-color: #0074D9; animation-name: backgroundmovement2;}
+.flex-grid-item:nth-child(3)  {background-color: #7FDBFF; animation-name: backgroundmovement;}
+.flex-grid-item:nth-child(4)  {background-color: #39CCCC; animation-name: backgroundmovement2;}
+.flex-grid-item:nth-child(5)  {background-color: #3D9970; animation-name: backgroundmovement;}
+.flex-grid-item:nth-child(6)  {background-color: #2ECC40; animation-name: backgroundmovement2;}
+.flex-grid-item:nth-child(7)  {background-color: #01FF70; animation-name: backgroundmovement;}
+.flex-grid-item:nth-child(8)  {background-color: #FFDC00; animation-name: backgroundmovement2;}
+.flex-grid-item:nth-child(9)  {background-color: #FF851B; animation-name: backgroundmovement;}
+
+.as-img{
+    width:80px !important;
+    height:100% !important;
+    display: flex;
+}
+.as-h1{
+    text-align: center;
+    color:white;
+}
+@keyframes backgroundmovement {
+    0% {
+  background-position: 0px 0px, 60px 60px;
+       }
+   100% {
+  background-position: 60px 60px, 120px 120px;
+ }
+}
+@keyframes backgroundmovement2 {
+    0% {
+  background-position: 0px 0px, -60px -60px;
+       }
+   100% {
+  background-position: -60px -60px, -120px -120px;
+ }
+}
+.App{
+    padding-bottom: 20px !important;
+}

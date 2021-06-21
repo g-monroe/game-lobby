@@ -1,0 +1,28 @@
+.frostedcard {
+    margin: 100px auto;
+    position: relative;
+    padding: 10px 5px;
+    background: rgba(0,0,0,.8);
+    font-size: 20px;
+    font-family: 'Lora', serif;
+    line-height: 1.5;
+    border-radius: 10px;
+    width: 60%;
+    box-shadow: 5px 3px 30px black;
+    overflow: hidden;
+}
+  
+.frostedcard::before {
+    content: '';
+    margin: -35px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    filter: blur(60px);
+    -moz-filter:blur(60px);
+    -o-filter:blur(60px);
+    -webkit-filter:blur(60px);
+    z-index: -1;
+}
